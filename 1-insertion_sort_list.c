@@ -23,11 +23,12 @@ void insertion_sort_list(listint_t **list)
 	now->next = last;
 	if (now->prev)
 		now->prev->next = now;
-else
+	else
 	*list = now;
+
 	if (last->next)
 		last->next->prev = last;
 	print_list(*list);
-		}
+	}
 	}
 }
